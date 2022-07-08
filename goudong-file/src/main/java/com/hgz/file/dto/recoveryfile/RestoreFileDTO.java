@@ -1,0 +1,18 @@
+package com.hgz.file.dto.recoveryfile;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Data;
+
+/**
+ * @author CunTouGou
+ * @date 2022/4/13 14:44
+ */
+
+@Data
+@Schema(name = "回收文件DTO",required = true)
+public class RestoreFileDTO {
+    @Schema(description="删除批次号")
+    private String deleteBatchNum;
+    @Schema(description="文件路径")
+    private String filePath;
+}
